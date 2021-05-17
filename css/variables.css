@@ -1,0 +1,230 @@
+::after, ::before {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+html {
+  font-size: 10px;
+  font-feature-settings: "palt" 1;
+  overflow-y: auto;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+body {
+  position: relative;
+  line-height: 1.6;
+  color: #1a1a1a;
+  font-size: 1.4rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+::selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, ::after, ::before {
+  /* background-repeat: no-repeat; */
+  box-sizing: inherit;
+}
+
+
+
+
+/* ------------------------------------
+
+ヘッダー
+
+------------------------------------*/
+.header {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 2.85714em;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.header__inner {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 8.92857em;
+}
+
+.header__logo {
+  z-index: 9999;
+  width: 148px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  /* background-image: url(/Users/sato/photologic/img/pc_logo.png); */
+  background-size: 192px auto;
+}
+
+.header__gnav, .header__logo {
+  display: table-cell;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.header__gnav {
+  padding-right: 80px;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.header__gnavList {
+  position: relative;
+  padding-right: 1.78571em;
+  display: flex;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__gnavItem {
+  position: relative;
+  display: inline-block;
+}
+
+.header__gnavItem a {
+  display: table;
+  height: 8.92857em;
+  padding: 0 1.78571em;
+  color: #1a1a1a;
+}
+
+.header.-transparent .header__gnavItem a {
+  color: #fff;
+}
+
+.header__gnavItem span {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 64em) {
+.header__gnavItem:not(.-current) .q-gnavItem {
+    overflow: hidden;
+}}
+
+.header.-transparent .header__gnavList:after {
+  background: #fff;
+}
+
+.header__gnavList:after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  content: '';
+  width: 1px;
+  height: 20px;
+  margin-top: -10px;
+}
+
+.mainImage {
+  z-index: 10;
+  margin-bottom: 4.78571em;
+  height: 100vh;
+  width: 100%;
+}
+
+.mainImage__inner {
+  position: relative;
+}
+
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+@media screen and (min-width: 480px){
+.q-carousel__item--current {
+    width: 100%;
+    transition-delay: 0s;
+    transition-duration: 1s;
+}}
+
+.mainImage__slide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 480px){
+.mainImage__slide {
+    position: absolute;
+    overflow-x: hidden;
+    will-change: width;
+}}
+
+.swiper-slide {
+  -webkit-flex-shrink: 0;
+  -ms-flex: 0 0 auto;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+@media screen and (min-width: 480px){
+.mainImage__link {
+    position: relative;
+    z-index: 2;
+    display: block;
+    height: 100%;
+}}
+
+.mainImage__bg {
+  height: 100%;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 480px){
+.mainImage__bg {
+    position: relative;
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
