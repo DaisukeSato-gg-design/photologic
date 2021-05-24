@@ -42,6 +42,7 @@
 <title>photologic | 撮影と編集を分かりやすく丁寧に。</title>
 
 <!-- typekit -->
+<script type="text/javascript"src="//code.typesquare.com/static/ZDbTe4IzCko%253D/ts106f.js"charset="utf-8"></script><!--モリサワフォント-->
 <script src="https://use.typekit.net/hiw0iaz.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
@@ -69,74 +70,68 @@
 
 </head>
 
+
+<!-- 全体のコンテナー-->
 <body class="preload">
-  <!-- 全体のコンテナー-->
+  <div class="l-root-container" id="top">
 
 <!-- ヘッダー -->
-  <header class="header -transparent">
-    <div class="header__inner innerBlock">
-            <h1 class="header__logo"><a href="https://loftwork.com/jp"><img src="/Users/sato/photologic/img/pc_logo.png" alt="loftwork"></a></h1>
-      <nav class="header__gnav">
-        <ul class="header__gnavList">
-          <li class="header__gnavItem"><a href="/jp/about"><span><div class="q-gnavItem"><div class="q-gnavItem__inner">About</div></div></span></a></li>
-          <li class="header__gnavItem" ><a href="/jp/work"><span><div class="q-gnavItem"><div class="q-gnavItem__inner">Work</div></div></span></a></li>
-          <li class="header__gnavItem"><a href="/jp/finding"><span><div class="q-gnavItem"><div class="q-gnavItem__inner">Findings</div></div></span></a></li>
-          <li class="header__gnavItem"><a href="/jp/event"><span><div class="q-gnavItem"><div class="q-gnavItem__inner">Events</div></div></span></a></li>
-          <li class="header__gnavItem"><a href="/jp/people"><span><div class="q-gnavItem"><div class="q-gnavItem__inner">People</div></div></span></a></li>
-          <li class="header__gnavItem"><a href="/jp/contact2"><span><div class="q-gnavItem"><div class="q-gnavItem__inner">Contact</div></div></span></a></li>
-        </ul>
-      </nav>
+<header class="l-header -transparent" id="js-header">
+  <div class="c-overlay" id="js-overlay"></div>
+  <div class="l-header__inner">  
+    <div class="l-header__logo">
+      <a href="https://infield95.com/recruit_info/">
+        <div class="l-header__img">
+          <img class="l-header__green-logo" src="/Users/sato/photologic/img/pc_logo.png" alt="INFIELDのロゴ">
+          <img class="l-header__white-logo" src="/Users/sato/photologic/img/pc_logo.png" alt="INFIELDのロゴ">
+        </div>
+          </a>
     </div>
-  </header>
+    <!-- SPハンバーガーメニュー -->
+    <button class="l-menu-button" id="js-header-trigger"><span class="l-menu-button__line"><span></span></span><span class="l-menu-button__text"><span class="l-menu-button__text1"><span>メ</span><span>ニ</span><span>ュ</span><span>ー</span></span><span class="l-menu-button__text2"><span>閉</span><span>じ</span><span>る</span></span></span></button>
+<!-- メニュー-->
+<nav class="l-header__nav" id="js-menu"><a class="l-header__splogo js-menu-item" href="/recruit_info/"><img src="/Users/sato/photologic/img/pc_logo.png" alt="INFIELDのロゴ"></a>
+  <ul class="l-header__main" id="js-menu-main">
+    <li class="l-header__item"><a class="l-header__link -current" href="https://infield95.com/recruit_info/"><span>ホーム</span></a></li>
+    <li class="l-header__item"><a class="l-header__link -trigger js-sp-accordion-trigger " href="https://infield95.com/recruit_info/feature/"><span>すべての記事</span></a></li>
+    <li class="l-header__item"><a class="l-header__link -trigger js-sp-accordion-trigger " href="https://infield95.com/recruit_info/work/"><span>撮影機材</span></a></li>
+    <li class="l-header__item"><a class="l-header__link -trigger js-sp-accordion-trigger " href="https://infield95.com/recruit_info/environment/"><span>撮影テクニック</span></a></li>
+    <li class="l-header__item"><a class="l-header__link -trigger js-sp-accordion-trigger " href="https://infield95.com/recruit_info/personnel/"><span>編集技術</span></a></li>
+  </ul>
+      <ul class="l-header__sub">
+        <li class="js-menu-item"><a href="https://infield95.com/recruit_info/sitemap/">サイトマップ</a></li>
+        <li class="js-menu-item"><a href="/recruit_info/entry/">エントリーフォーム</a></li>
+      </ul>
+</nav>
+<!-- <div class="l-header__contact js-menu-item"><a class="c-button -header_contact" href="/recruit_info/entry/"><span>エントリー<i class="c-circle-arrow -right"></i></span></a></div> -->
+  </div>
+</header>
 
 <!-- メインビジュアル -->
-  <div class="mainImage">
-    <div class="mainImage__inner">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="mainImage__slide swiper-slide -project q-carousel__item--prev">
-              <a href="https://loftwork.com/jp/project/kyoto-university-original_philo" class="mainImage__link">
-                <div class="mainImage__bg"><img src="/Users/sato/photologic/img/mv.png" alt="photologic"></div>
-                  <div class="mainImage__slideCopy">
-                    <div class="mainImage__slideCopyInner">
-                      <p class="mainImage__slideCopyTags"><span>撮影技術 / 2021.05.06</span></p>
-                      <div class="mainImage__slideCopyPanel">
-                        <p class="mainImage__slideCopyTitle">
-                          <span class="for-pc-inline">アイテムを使ったぼかしで<br>ふんわりとした写真にする方法
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-              </a>
-          </div>
-        </div>
-        <!-- /.swiper-wrapper -->
-
-        <div class="mainImage__controler" style="top: inherit;">
-          <div class="mainImage__controlerInner">
-            <div class="mainImage__copyright">©2021 photologic. All rights reserved</div>
-            <div class="mainImage__arrow swiper-prevnext">
-              <div class="mainImage__arrowPrev swiper-button-prev"></div><div class="mainImage__arrowNext swiper-button-next"></div>
-            </div>
-            <div class="mainImage__number"><span class="swiper-pagination-current"><span style="transform: translate3d(-39.8325px, 0px, 0px);"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span></span></span> / <span class="swiper-pagination-total">6</span></div>
-          </div>
-        </div>
-        <!-- /.mainImage__controler -->
-
-        <div class="mainImage__update">
-        <span class="mainImage__updateText" style="visibility: inherit; opacity: 1; transform: matrix(0, 1, -1, 0, 0, 0);">Update  210514  Fri</span>        </div>
-        <!-- /.mainImage__update -->
-      </div>
-      <!-- /.swiper-container -->
-
-      <div class="mainImage__scroll">
-        <span class="mainImage__scrollIcon"></span>
-      </div>
-      <!-- /.mainImage__scroll -->
-
+<div class="l-content-container -padding_0">
+  <div class="p-home-visual" id="js-main-visual" data-interval="5000">
+    <div class="p-home-visual__carousel">
+      <ul class="p-home-visual__list">
+        <li class="p-home-visual__bg js-main-bg -num1 -active -visible"></li>
+        <li class="p-home-visual__bg js-main-bg -num2"></li>
+        <li class="p-home-visual__bg js-main-bg -num3 -inverted"></li>
+      </ul>
     </div>
-    <!-- /.mainImage__inner -->
+    <div class="p-home-visual__inner">
+      <div class="p-home-visual__msg js-scrollup-container" data-interval="110">
+        <p class="p-home-visual__tag">撮影技術 / 2020.05.05</p>
+        <span class="p-home-visual__sub js-scrollup u-fade-in">アイテムを使ったぼかしで<br>ふんわりとした写真にする方法</span>
+      </div>
+    </div>
+    <!-- メインビジュアルスイッチ -->
+    <div class="p-home-visual__switch">
+      <div class="p-home-visual__switchinner">
+        <div class="p-home-visual__copyright">©︎ 2021 Photologic</div>
+        
+      </div>
+    </div>
   </div>
-
+</div>
+</div>
 </body>
 </html>
