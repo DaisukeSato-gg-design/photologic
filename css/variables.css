@@ -499,7 +499,7 @@ ol, ul, li {
   width: 90px;
   height: 66px;
   background: url(/Users/sato/photologic/img/arrow-left-s-line.svg) center center no-repeat;
-  background-size: 8px auto;
+  background-size: 22px auto;
   background-color: #e6e6e6;
   vertical-align: middle;
   transition: background-color .2s ease-out;
@@ -607,3 +607,99 @@ ol, ul, li {
 }
 }
 
+.p-home-visual__scroll {
+  position: relative;
+  top: calc(-66px - -18px);
+  width: 21px;
+  margin: 0 auto;
+  transform: translateZ(0);
+  transition: all .2s ease-out;
+  transform-origin: center bottom;
+  perspective: 500px;
+  z-index: 2;
+}
+
+.p-home-visual__scroll:before {
+  width: 21px;
+  height: 35px;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.p-home-visual__scroll:before,.p-home-visual__scroll:after {
+  display: block;
+  z-index: 1;
+  content: '';
+  margin: 0 auto;
+}
+
+.p-home-visual__scrollicon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  z-index: 2;
+  display: block;
+  margin: 0 auto;
+  width: 1px;
+  height: 8px;
+  background: #000;
+  animation: fadeOutDown 2s infinite;
+  animation-fill-mode: both;
+}
+
+.p-home-visual__scroll:after {
+position: absolute;
+top: 18px;
+left: 10px;
+width: 1px;
+height: 96px;
+background: rgba(0,0,0,.15);
+}
+
+/* ------------------------------------
+
+新着記事コンテンツ
+
+------------------------------------*/
+
+.contents-newpost__group {
+  margin-top: 90px;
+  background-color: #f7f7f7;
+}
+
+.contents-newpost__inner {
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+}
+
+.contents-newpost__header {
+  margin-bottom: 58px;
+  position: relative;
+  padding-bottom: 50px;
+  z-index: 1;
+}
+
+.contents-newpost__group,.contents-newpost__header {
+  top: -50px;
+  margin-bottom: -60px;
+  z-index: 0;
+}
+
+.contents-newpost__header:after {
+  content: "";
+  opacity: 1;
+  /* background-color: #fff; */
+  background-image: url(./img/bg-stripe.png);
+  background-repeat: repeat;
+  background-size: auto;
+  width: 460px;
+  display: BLOCK;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+}
